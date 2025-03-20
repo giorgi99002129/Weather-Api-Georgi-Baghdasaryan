@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Menu</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="search-container">
+        <!-- <div id="weather-container">
+            <h3 id="weather-header">Погода</h3>
+            <p id="weather-description">Выберите город, чтобы узнать погоду.</p>
+            <p id="weather-temp"></p>
+        </div> -->
+
+
+        <label for="country-select" id="country-label">Select country:</label>
+        <select id="country-select">
+            <option value="" disabled selected>Select country</option>
+            <option value="am">Armenia</option>
+            <option value="russia">Russian</option>
+            <option value="usa">United States</option>
+        </select>
+
+        <label for="region-select" id="region-label">Select region:</label>
+        <select id="region-select" disabled>
+            <option value="" disabled selected>Select region</option>
+        </select>
+
+        <label for="city-select" id="city-label">Select city:</label>
+        <select id="city-select" disabled>
+            <option value="" disabled selected>Select city</option>
+        </select>
+    </div>
+
+
+    <div class="menu" id="menu">
+        <div class="product-card">
+            <h3 class="product-name" id="weather-header"></h3>
+            <p class="product-description" id="weather-description">Description of the weather 1.</p>
+            <p id="weather-temp"></p>
+            <button class="add-to-cart">Добавить в корзину</button>
+        </div>
+    </div>
+
+    
+
+    <script src="main.js"></script>
+
+</body>
+</html>

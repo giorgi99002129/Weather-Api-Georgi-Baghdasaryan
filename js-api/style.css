@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a1a1a1;   
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 50px;
+    /* flex-wrap: wrap; */
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+/* Стили для контейнера с поиском */
+.search-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Можно настроить ширину */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стили для метки (label) */
+.search-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Стили для выпадающего списка (select) */
+.search-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+/* Эффект при фокусировке на выпадающем списке */
+.search-container select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Стили для первого элемента списка */
+.search-container option {
+    font-size: 14px;
+    padding: 10px;
+}
