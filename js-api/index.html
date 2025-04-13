@@ -1,53 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Menu</title>
+    <title>Weather menu</title>
     <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-    <div class="search-container">
-        <!-- <div id="weather-container">
-            <h3 id="weather-header">Погода</h3>
-            <p id="weather-description">Выберите город, чтобы узнать погоду.</p>
-            <p id="weather-temp"></p>
-        </div> -->
-
-
-        <label for="country-select" id="country-label">Select country:</label>
-        <select id="country-select">
-            <option value="" disabled selected>Select country</option>
-            <option value="am">Armenia</option>
-            <option value="russia">Russian</option>
-            <option value="usa">United States</option>
-        </select>
-
-        <label for="region-select" id="region-label">Select region:</label>
-        <select id="region-select" disabled>
-            <option value="" disabled selected>Select region</option>
-        </select>
-
-        <label for="city-select" id="city-label">Select city:</label>
-        <select id="city-select" disabled>
-            <option value="" disabled selected>Select city</option>
-        </select>
-    </div>
-
-
-    <div class="menu" id="menu">
-        <div class="product-card">
-            <h3 class="product-name" id="weather-header"></h3>
-            <p class="product-description" id="weather-description">Description of the weather 1.</p>
-            <p id="weather-temp"></p>
-            <button class="add-to-cart">Добавить в корзину</button>
-        </div>
-    </div>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
     
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 
-    <script src="main.js"></script>
+
+</head> 
+
+<body>
+    <div id="header">
+        <img id="home" src="./images/home.png">
+
+
+        <div class="search-container">
+            <input type="text" class="search-bar" id="searchInput" placeholder="Введите запрос...">
+            <button class="search-button" id="searchButton" >Поиск</button>
+        </div>
+
+        <img id="favorite" src="./images/bookmark_7646775.png">
+
+    </div>
+
+    <div class="main">
+        <canvas id="weatherChart" style="display: none;" ></canvas>
+        <div id="weather-container"></div>
+        <div id="buttonDiv"></div>
+    </div>
+
+    <script src="getWeather.js"></script>
+    <script src="getFavorite.js"></script>
+    <script src="getDetails.js"></script>
+    <script src="goHome.js"></script>
+
 
 </body>
+
 </html>
