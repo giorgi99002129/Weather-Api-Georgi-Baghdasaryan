@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+
+</head> 
+
+<body>
+    <div id="header">
+        <img id="home" src="./images/home.png">
+
+
+        <div class="search-container">
+            <input type="text" class="search-bar" id="searchInput" placeholder="Введите запрос...">
+            <button class="search-button" id="searchButton" >Поиск</button>
+        </div>
+
+        <img id="favorite" src="./images/bookmark_7646775.png">
+
+    </div>
+
+    <div class="main">
+        <canvas id="weatherChart" style="display: none;" ></canvas>
+        <div id="weather-container"></div>
+        <div id="buttonDiv"></div>
+    </div>
+
+    <script src="getWeather.js"></script>
+    <script src="getFavorite.js"></script>
+    <script src="getDetails.js"></script>
+    <script src="goHome.js"></script>
+
+
+</body>
+
+</html>
